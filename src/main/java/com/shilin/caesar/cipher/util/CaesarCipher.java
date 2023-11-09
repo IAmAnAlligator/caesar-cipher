@@ -1,12 +1,15 @@
 package com.shilin.caesar.cipher.util;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CaesarCipher {
 
-    private final int LIMIT = 26;
-    private final char CHAR_A_UPPERCASE = 'A';
-    private final char CHAR_Z_UPPERCASE = 'Z';
-    private final char CHAR_A_LOWERCASE = 'a';
-    private final char CHAR_Z_LOWERCASE = 'z';
+    private static final int LIMIT = 26;
+    private static final char CHAR_A_UPPERCASE = 'A';
+    private static final char CHAR_Z_UPPERCASE = 'Z';
+    private static final char CHAR_A_LOWERCASE = 'a';
+    private static final char CHAR_Z_LOWERCASE = 'z';
 
     public String cipher(String message, int offset) {
         StringBuilder result = new StringBuilder();
